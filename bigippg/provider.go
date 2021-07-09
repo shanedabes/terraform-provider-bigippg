@@ -68,7 +68,7 @@ func Provider() terraform.ResourceProvider {
 			},
 		},
 		ResourcesMap: map[string]*schema.Resource{
-			"bigip_ltm_monitor": resourceBigipLtmMonitor(),
+			"bigippg_ltm_monitor": resourceBigipLtmMonitor(),
 		},
 	}
 	p.ConfigureFunc = func(d *schema.ResourceData) (interface{}, error) {
